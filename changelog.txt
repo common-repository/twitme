@@ -1,0 +1,187 @@
+Version 1.6.9.7
+		- Fixed a bug where Twitme reported that it could not find json_encode.
+		
+Version 1.6.9.6
+        - Fixed a bug in the new shorturl system this caused posts not to be send to Twitter.
+
+Version 1.6.9.5
+        - Fixed a bug where Favorites didnt show up
+		- FIxed a bug where Followers didnt show up
+		- Fixed a bug where Wordpress report duplicate definition of user_sort
+		
+
+Version 1.6.9.4
+        - Skiped
+		
+Version 1.6.9.3
+        - Followers are now ordered by the alphabeth.
+        - Goodbye TimeURL HI bit.ly
+        - Fixed a security issue where Twitme sends password protected posts to Twitter (or the content).
+        - Twitme no longer sends pages to Twitter
+
+
+Version 1.6.9.2
+        - Fixed a bug that existed in 1.6.9.1 (Related to drafts)
+		- Removed a refference bug in TwitOptions.php line 55
+		- Fixed a litle bug where revisions where being send over to Twitter.
+		
+		
+Version 1.6.9.1
+        - This fix will stop drafts from being send to Twitter.
+		
+Version 1.6.9 
+       - Fixed the submit all routine that got broken in Twitme 1.6.8.1
+	   - Fixed an issue where scheduled posts where not submitted to Twitter.
+	   - Added an option to send edited posts to Twitter yes or no (default no) 
+
+Version 1.6.8.1
+        - Fixed the bug where posts where not send to Twitter since version 1.6.8
+		- Added the new logo for twitme in the package.
+		- Removed plugindata.xml whinch was never needed
+		
+Version 1.6.8
+        - Fixed the Date notation bug that sliped into the code since jan 2009.
+		- Added an option to omit categories from being posted to Twitter.
+		 
+
+Version 1.6.7
+		- Fixes a bug where posts where not submitted to Twitter any more (Sorry about that)
+		
+
+Version 1.6.6
+   		- Fixed the IE bugs with IE6 and IE7
+   		- Removed the reply button from the outbox tab
+        - Fixed a bug thats known as the broken url bug caused by Twitme changing into Summary mode when template mode was active 
+		- Fixed a bug in Twit maps where the followers didnt show up on the map
+        - Fixed bug where posts would be submitted when editing a post.
+		- Fixed the no_follow bug in timesurlclass.php
+		
+Version 1.6.5
+        - Fixed a bug in test login ! this happend only when users tried the test button with NO posts on the timeliner.
+		- Fixed the well known cant read/post to/from Twitter.
+		- Fixed the php4 (NON US) time bug
+		- Fixed the CURLOPT_FOLLOWLOCATION  bug
+		- All follower images are now 48x48 
+		- Fixed @reply bugs where it was parsed the wrong way.
+		- These fixes make Twitme look more relaxed and prefectl and strong.
+
+Version 1.6.4
+		- Fixed a broken function for php4
+
+Version 1.6.3
+	
+	   - Warning!: IE6 is no longer supported as it doesnt support jquery right
+	   - Fixed IE7 and IE8 layout it works again (We had some broken css).
+       - Fixed broken links on Wordpress 2.7 in the follower browser.
+
+Version 1.6.2
+
+	  - Fixed the language file 
+	  - Fixed the so called on-scalar value bug winch loads of people complained about (Thanks to paul prins).
+	  - Added date_default_timezone_set('UTC'); to fix the time bug.
+	  - Fixed a define name bug in twitclass.php
+	  - Fixed a LibCurl bug in twitclass.php "Use of undefined constant CURLOPT_GET - assumed 'CURLOPT_GET'"
+	  - Fixed the defines the proper way.
+	  - Added a follower browser thanks BloggerSavvy.
+	  
+
+Version 1.6.1
+	 - Fixed a bug where Services_JSon was already defined.
+
+Version 1.6
+	 - Added Google maps to see your followers
+	 - Tested Twitme 1.6 To run on Wordpress 2.7 Beta 3
+	 - Fixed: Fixed the bug where the test button wasnt working properly
+     - User now receives status updates from the plugin Author.
+     - Fixed a bug in the time diffrence calculation
+     - Gave Twitme a own menu ontop of the admin page.
+     - Tested Twitme on wordpress 2.7 Beta 1
+     - Fixed: When typing a message of more then 140 chars the message box would be blocked.
+     - Users can now delete incomming directmessages
+     - Users can now read inbound directmessages
+     - Users can now read outbound directmessaes
+     - Fixed the striped quotes bug when sending messages to Twitter.                                   
+     - Moved the followers trash icon more to the top on the right of the image
+	 - Added a loading indicator where the Favorites are loading.
+	 - Added a loading indicator where the timeline is loading.
+	 - Added sender name to on messages on the Manage Page 
+     - Fixed connection speed between Twitter and Twitme.
+     - Quickly add messages to your Favorites
+     - Click a profile image to send a @ message
+     - Added @reply reconision
+     - Added the option to delete Messages you have send
+     - Added Help, Twit mode and Favorites
+
+Version 1.5.2
+     - Fixed the activation bug that accoured in version 1.5.1
+
+Version 1.5.1
+     - Fixed the dutch Translation.
+     - Special chars are now allowed in messages and login information.
+     - Removed prototype.js as it colided with jquery.
+     - Fixed the notify Followers bug because it always did send messages to Followers enabled or not and with every post.
+     - Robert fixed the German and American language as some things where missing.
+     - The userAgent now is "Twitme for wordpress" (in Twitclass)
+     - Fixed some missing tekst in version 1.5 (Settings:Press save to save your setttings).
+     - Fixed a bug where auto post to Twitter could be turened off but this was ignored.
+     - Version 1.5.1 will not support the Italian language as i could not reach sasa
+     - Sasa fixed the Italian translation
+
+Version 1.5
+    - You can now send messages from your Twitme manage section to your followers.
+    - Fixed a bug where "Send notification to followers" where on/off didnt work
+    - Added the option to turn automaticly sending to Twitter on or off.
+    - After saving the settings you will automaticly scroll backup to the top of the page.
+    - Your perma links now will be used (if set) on twitter so no more ugly ?p= syntax
+    - When you press "Test now" you will be taken to the top where you can see the test results.
+    - Added a donate button in the settings page.
+    - Added 2 new Tags %POSTTITLE% and %POSTURL%.
+    - On Twitter you will now see (behind your message) " from Twitme for WordPress"
+    - Fixed a bug for new Twitme users in_array() on line 97 in /Users/rave/Sites/wordpress/wp-content/plugins/twitme/pages/mannage.php
+    - Fixed a bug that was also related to new users, some options did not have a default value.
+	- Added spanish and american translation.
+	
+Version 1.4
+    - Fixed the double post bug that always has been in Twitme.
+    - Added dutch translation.
+    - Added a new logo created by Dustin Crisman (TwItCh on irc.freenode.net #css)
+    - Added a link to the users Twitter page under the submit update block.
+    - Added the ability to resend a post to Twitter.
+    - Added the german translation Thanks to Andre Kemena
+    - Added the Italian translation Thanks to Sasa.
+    - Updated the style of the readme.txt file.
+    - Fixed a bug in Manage Twits where not submitted posts showed up in the send to Twitter List.
+    - You can now resend your blog post to Twitter if you want to
+    - Updated the style of the readme file
+
+Version 1.3.1
+  - Followers can now be deleted
+  - Username as password are being displayed correctly in the settings form now.
+  - Fixed: foreach() in /../../../wp-content/plugins/twitme/pages/mannage.php on line 166 Thanks to Robert
+  - The manage page send to update style bug fix, windows now fixed next to each other also on Chrome and Firefox 3.0
+  - Fixed  undefined function notify_twitter() in /../../../wp-content/plugins/twitme/pages/mannage.php on line 22 Thanks to Robert
+  - Fixed typo`s in the readme.txt file.
+  - Fixed a bug in the login where failing authorization would not be detected.
+
+Version 1.3
+  - Added an option to send new followers a thank you message
+  - Added a button on the Mannage page that can be used to submit all posts that are NOT on twitter yet.
+  - Fixed the style of the Followers list, the image is more centered now.
+  - Users can now send messages to twitter from the Mannage page.
+  - Added date / author / comment count to the send messages.
+
+Version 1.2
+ - Fixes an error because 1.1 was permaturly released sorry !!
+ - The debug mode is now off (was a bug with version 1.1)
+ - Once again sorry for the wrong release. 
+ - Fixed the template method.
+
+
+Version 1.1
+ - Added json_encode support for php version prior to 5.2
+ - Added support to request the followers, they are now visible on the manage page
+ - Added scrolling support trough your followers.
+
+
+Version 1.0
+ - First release
